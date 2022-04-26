@@ -19,6 +19,9 @@
 		6023DC4526260AED0041C58E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6023DC4426260AED0041C58E /* Coordinator.swift */; };
 		6023DC4926260B330041C58E /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6023DC4826260B330041C58E /* DIContainer.swift */; };
 		6023DC4E26260C0B0041C58E /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6023DC4D26260C0B0041C58E /* ListModel.swift */; };
+		6023DC5426260C8A0041C58E /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6023DC5326260C8A0041C58E /* DataItem.swift */; };
+		6023DC5726260CC80041C58E /* RemoteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6023DC5626260CC80041C58E /* RemoteItem.swift */; };
+		6023DC5A26260CF20041C58E /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6023DC5926260CF20041C58E /* EndPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		6023DC4426260AED0041C58E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		6023DC4826260B330041C58E /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		6023DC4D26260C0B0041C58E /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		6023DC5326260C8A0041C58E /* DataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItem.swift; sourceTree = "<group>"; };
+		6023DC5626260CC80041C58E /* RemoteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteItem.swift; sourceTree = "<group>"; };
+		6023DC5926260CF20041C58E /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,9 +152,28 @@
 		6023DC4C26260BE90041C58E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6023DC5126260C450041C58E /* DataProtocols */,
+				6023DC5226260C640041C58E /* DataStructs */,
 				6023DC4D26260C0B0041C58E /* ListModel.swift */,
+				6023DC5926260CF20041C58E /* EndPoint.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6023DC5126260C450041C58E /* DataProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				6023DC5326260C8A0041C58E /* DataItem.swift */,
+			);
+			path = DataProtocols;
+			sourceTree = "<group>";
+		};
+		6023DC5226260C640041C58E /* DataStructs */ = {
+			isa = PBXGroup;
+			children = (
+				6023DC5626260CC80041C58E /* RemoteItem.swift */,
+			);
+			path = DataStructs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,10 +245,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6023DC5A26260CF20041C58E /* EndPoint.swift in Sources */,
 				6023DC4526260AED0041C58E /* Coordinator.swift in Sources */,
 				6023DC4226260AC60041C58E /* ImageLoader.swift in Sources */,
+				6023DC5726260CC80041C58E /* RemoteItem.swift in Sources */,
 				6023DC12262592F90041C58E /* StartController.swift in Sources */,
 				6023DC3826260A120041C58E /* Service.swift in Sources */,
+				6023DC5426260C8A0041C58E /* DataItem.swift in Sources */,
 				6023DC3F26260A910041C58E /* URLSession.swift in Sources */,
 				6023DC3C26260A6A0041C58E /* UITableView.swift in Sources */,
 				6023DC2C26259B820041C58E /* UIView.swift in Sources */,
